@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Perl bindings for the RPM Package Manager API
-Summary(pl):	Dowi±zania do API zarz±dcy pakietów RPM
+Summary:	RPM2 - Perl bindings for the RPM Package Manager API
+Summary(pl):	RPM2 - dowi±zania do API zarz±dcy pakietów RPM
 Name:		perl-RPM2
 Version:	0.66
 Release:	1
-License:	GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPM/CHIPT/RPM2-%{version}.tar.gz
 # Source0-md5:	3e53f141c7160f1b82087e93c6295240
