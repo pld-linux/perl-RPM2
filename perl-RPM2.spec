@@ -2,12 +2,12 @@
 Summary:	Perl bindings for the RPM Package Manager API
 Summary(pl):	Dowi±zania do API zarz±dcy pakietów RPM
 Name:		perl-RPM2
-Version:	0.63
+Version:	0.66
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPM/CHIPT/RPM2-%{version}.tar.gz
-# Source0-md5:	3a84c4e501f36f17a952ed2d0bc9da7b
+# Source0-md5:	3e53f141c7160f1b82087e93c6295240
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
