@@ -12,7 +12,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPM/CHIPT/RPM2-%{version}.tar.gz
 # Source0-md5:	3e53f141c7160f1b82087e93c6295240
-BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
