@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	RPM2 - Perl bindings for the RPM Package Manager API
 Summary(pl):	RPM2 - dowi±zania do API zarz±dcy pakietów RPM
@@ -30,6 +34,8 @@ obecnych w systemie.
 	INSTALLDIRS=vendor
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
