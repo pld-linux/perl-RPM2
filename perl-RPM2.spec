@@ -17,18 +17,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The RPM2 module provides an object-oriented interface to querying both
 the installed RPM database as well as files on the filesystem.
 
+%description -l pl
+Modu³ RPM2 dostarcza obiektowo zorientowany interfejs do zapytañ
+dotycz±cych zarówno bazy zainstalowanych pakietów RPM, jak i plików
+obecnych w systemie.
+
 %prep
 %setup -q -n RPM2-%{version}
 
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -37,6 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %{perl_vendorarch}/RPM2.pm
+%dir %{perl_vendorarch}/auto/RPM2
 %{perl_vendorarch}/auto/RPM2/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/RPM2/*.so
 %{_mandir}/man3/*
