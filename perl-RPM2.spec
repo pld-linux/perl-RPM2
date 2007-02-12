@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	RPM2 - Perl bindings for the RPM Package Manager API
-Summary(pl):	RPM2 - dowi±zania do API zarz±dcy pakietów RPM
+Summary(pl.UTF-8):   RPM2 - dowiÄ…zania do API zarzÄ…dcy pakietÃ³w RPM
 Name:		perl-RPM2
 Version:	0.67
 Release:	1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The RPM2 module provides an object-oriented interface to querying both
 the installed RPM database as well as files on the filesystem.
 
-%description -l pl
-Modu³ RPM2 dostarcza obiektowo zorientowany interfejs do zapytañ
-dotycz±cych zarówno bazy zainstalowanych pakietów RPM, jak i plików
+%description -l pl.UTF-8
+ModuÅ‚ RPM2 dostarcza obiektowo zorientowany interfejs do zapytaÅ„
+dotyczÄ…cych zarÃ³wno bazy zainstalowanych pakietÃ³w RPM, jak i plikÃ³w
 obecnych w systemie.
 
 %prep
