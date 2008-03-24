@@ -13,6 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPM/CHIPT/RPM2-%{version}.tar.gz
 # Source0-md5:	f9888629116a9b1a5cc39d2e16d44afd
+URL:		http://search.cpan.org/dist/RPM2/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-devel >= 4.4.1
 BuildRequires:	rpm-perlprov >= 4.1-13
