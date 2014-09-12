@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/RPM2.pm
 %dir %{perl_vendorarch}/auto/RPM2
-%{perl_vendorarch}/auto/RPM2/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/RPM2/*.so
 %{_mandir}/man3/*
